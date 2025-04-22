@@ -1,0 +1,86 @@
+import DoctorModel from "../doctors_module/models/DoctorModel";
+
+const doctors = [
+  new DoctorModel({
+    id: 1,
+    name: "Dr. John Smith",
+    image: "https://img.freepik.com/free-photo/portrait-smiling-attractive-male-doctor-man_171337-5066.jpg?uid=R51464277&ga=GA1.1.760949366.1744978273&semt=ais_hybrid&w=740",
+    specialty: "Cardiology",
+    availability: ["2025-10-01T09:00:00", "2025-10-01T10:00:00"],
+    location: "New York, NY",
+  }),
+  new DoctorModel({
+    id: 2,
+    name: "Dr. Jane Doe",
+    image: "https://img.freepik.com/free-psd/doctor-preparing-routine-medical-check_23-2150493259.jpg?ga=GA1.1.760949366.1744978273&semt=ais_hybrid&w=740",
+    specialty: "Dermatology",
+    availability: ["2025-10-01T11:00:00", "2025-10-01T12:00:00"],
+    location: "Los Angeles, CA",
+  }),
+  new DoctorModel({
+    id: 3,
+    name: "Dr. Emily Johnson",
+    image: "https://img.freepik.com/free-photo/medium-shot-doctor-wearing-lab-coat_23-2148816191.jpg?ga=GA1.1.760949366.1744978273&semt=ais_hybrid&w=740",
+    specialty: "Pediatrics",
+    availability: ["2025-10-01T13:00:00", "2025-10-01T14:00:00"],
+    location: "Chicago, IL",
+  }),
+  new DoctorModel({
+    id: 4,
+    name: "Dr. Michael Brown",
+    image: "https://img.freepik.com/premium-photo/smiling-young-doctor-isolated-white_53419-1583.jpg?uid=R51464277&ga=GA1.1.760949366.1744978273&semt=ais_hybrid&w=740",
+    specialty: "Orthopedics",
+    availability: ["2025-10-01T15:00:00", "2025-10-01T16:00:00"],
+    location: "Houston, TX",
+  }),
+  new DoctorModel({
+    id: 5,
+    name: "Dr. Emila Wilson",
+    image: "https://img.freepik.com/free-photo/young-woman-doctor-white-coat-with-phonendoscope-standing-with-serious-face-looking-camera-white-isolated-background_141793-9847.jpg?ga=GA1.1.760949366.1744978273&semt=ais_hybrid&w=740",
+    specialty: "Neurology",
+    availability: ["2025-10-01T17:00:00", "2025-10-01T18:00:00"],
+    location: "Phoenix, AZ",
+  }),
+  new DoctorModel({
+    id: 6,
+    name: "Dr. Sarah Lee",
+    image: "https://img.freepik.com/premium-photo/closeup-portrait-her-she-nice-attractive-lovely-content-wavyhaired-girl-doc-holding-hands-medical-insurance-assistance-terms-diagnostic-isolated-grey-pastel-color-background_274222-24365.jpg?uid=R51464277&ga=GA1.1.760949366.1744978273&semt=ais_hybrid&w=740",
+    specialty: "Gastroenterology",
+    availability: ["2025-10-01T09:00:00", "2025-10-01T10:00:00"],
+    location: "San Francisco, CA",
+  }),
+  new DoctorModel({
+    id: 7,
+    name: "Dr. David Clark",
+    image: "https://img.freepik.com/free-photo/doctor-with-his-arms-crossed-white-background_1368-5789.jpg?uid=R51464277&ga=GA1.1.760949366.1744978273&semt=ais_hybrid&w=740",
+    specialty: "Endocrinology",
+    availability: ["2025-10-01T11:00:00", "2025-10-01T12:00:00"],
+    location: "Seattle, WA",
+  }),
+  new DoctorModel({
+    id: 8,
+    name: "Dr. Olivia Martinez",
+    image: "https://img.freepik.com/free-photo/female-doctor-hospital-with-stethoscope_23-2148827776.jpg?uid=R51464277&ga=GA1.1.760949366.1744978273&semt=ais_hybrid&w=740",
+    specialty: "Oncology",
+    availability: ["2025-10-01T13:00:00", "2025-10-01T14:00:00"],
+    location: "Miami, FL",
+  }),
+  new DoctorModel({
+    id: 9,
+    name: "Dr. William Harris",
+    image: "https://img.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg?uid=R51464277&ga=GA1.1.760949366.1744978273&semt=ais_hybrid&w=740",
+    specialty: "Psychiatry",
+    availability: ["2025-10-01T15:00:00", "2025-10-01T16:00:00"],
+    location: "Boston, MA",
+  }),
+  new DoctorModel({
+    id: 10,
+    name: "Dr. Sophia Davis",
+    image: "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?uid=R51464277&ga=GA1.1.760949366.1744978273&semt=ais_hybrid&w=740",
+    specialty: "Rheumatology",
+    availability: ["2025-10-01T17:00:00", "2025-10-01T18:00:00"],
+    location: "Denver, CO",
+  }),
+];
+
+export default doctors;

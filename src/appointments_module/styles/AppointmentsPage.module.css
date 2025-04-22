@@ -1,0 +1,101 @@
+.title {
+  font-size: 2rem;
+  text-align: start;
+  margin-top: 2rem;
+}
+
+.appointments_list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.appointment_item {
+  height: 200px;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.appointment_item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.appointment_details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.appointment_details h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.appointment_details h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.appointment_item button {
+  height: 2.5rem;
+  width: 10rem;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (width<=700px) {
+  .title {
+    font-size: 1.5rem;
+    text-align: start;
+    margin-top: 2rem;
+  }
+
+  .appointment_item {
+    height: 120px;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .appointment_item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .appointment_details {
+    gap: 0.3rem;
+  }
+
+  .appointment_details h1 {
+    font-size: 1.3rem;
+  }
+
+  .appointment_details h2 {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  .appointment_item button {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

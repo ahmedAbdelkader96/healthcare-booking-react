@@ -1,0 +1,274 @@
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 16px;
+  padding: 0px;
+}
+
+.grid_item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  background-color: white;
+  width: 100%;
+  height: 550px;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.grid_item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(0.99);
+}
+
+.grid_item_image_container {
+  position: relative;
+  height: 350px;
+  object-fit: cover;
+}
+
+.grid_item_image_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid_item_content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.grid_item_content h2 {
+  font-size: 1.5rem;
+  color: #043d93;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.grid_item_content h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 0.3rem;
+  padding: 0;
+}
+
+.grid_item_content h4 {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* Modal Overlay */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal_content {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  gap: 1.5rem;
+}
+
+.modal_content h5 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.modal_content h6 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.time_slot_input {
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 1rem;
+  background-color: red;
+}
+
+.modal_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.alert_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.alert_box {
+  width: 40%;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.alert_box p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.alert_box button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.alert_box button:hover {
+  background-color: #0056b3;
+}
+
+/* Book Button */
+.book_button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #043d93;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book_button:hover {
+  background-color: #043d93;
+}
+
+/* Shimmer Effect */
+.shimmer {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #f0f0f0 0%,
+    #e0e0e0 20%,
+    #f0f0f0 40%,
+    #f0f0f0 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Hidden Class */
+.hidden {
+  display: none;
+}
+
+@media screen and (width<=1220px) and (width>700px) {
+  .grid_container {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+
+  .grid_item {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+  }
+
+  .grid_item_image_container {
+    width: 50%;
+  }
+
+  .grid_item_content {
+    align-items: start;
+  }
+
+  .modal_content h5 {
+    font-size: 1.3rem;
+  }
+
+  .alert_box {
+    width: 70%;
+  }
+}
+
+@media screen and (width<=700px) {
+  .grid_container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .grid_item {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+  }
+
+  .grid_item_image_container {
+    width: 60%;
+  }
+
+  .grid_item_content {
+    align-items: start;
+  }
+
+  .modal_content {
+    width: 70%;
+  }
+
+  .modal_content h5 {
+    font-size: 1.1rem;
+  }
+
+  .alert_box {
+    width: 70%;
+  }
+}
